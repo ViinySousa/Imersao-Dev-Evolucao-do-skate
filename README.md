@@ -5,7 +5,7 @@ A aplicação guia o usuário por uma linha do tempo histórica, oferece tutoria
 
 * ## ⚙️ Destaques Técnicos & Funcionalidades:
 
-O diferencial deste projeto está na lógica implementada com **JavaScript**
+O diferencial deste projeto está na lógica com **JavaScript**
 
 * **Busca Inteligente (Smart Search):** O campo de busca não é apenas um filtro de texto. Implementei uma lógica condicional que detecta a intenção do usuário:
     * *Digitar um ano (ex: 1970):* Filtra a timeline histórica.
