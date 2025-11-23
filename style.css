@@ -1,0 +1,875 @@
+/* --- Importação de Fontes Externas --- */
+/* Importa as fontes 'Oswald', 'Roboto Mono' e 'Stardos Stencil' do Google Fonts para serem usadas no projeto. */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Mono&family=Stardos+Stencil:wght@700&display=swap');
+
+/* --- Variáveis de Cor (Custom Properties) --- */
+/* Define uma paleta de cores centralizada para facilitar a manutenção e garantir consistência no design. */
+:root {
+    --cor-fundo: #000000; /* Cor de fundo principal (preto) */
+    --cor-texto: #FFFFFF;
+    --cor-destaque: #FF0055;
+    --cor-destaque-hover: #d40047;
+    --cor-timeline: #F7C63A;
+    --cor-timeline-link: #f7c53aa6;
+    --cor-cinza-escuro: #333333;
+}
+
+/* --- Estilos Globais e Reset --- */
+/* Define estilos base para todo o corpo do documento, garantindo uma aparência consistente. */
+body {
+    background-color: var(--cor-fundo); /* Fundo principal */
+    color: var(--cor-texto); /* Cor do texto padrão */
+    font-family: 'Roboto Mono', monospace; /* Fonte para parágrafos */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout do Container Principal --- */
+/* Cria um container centralizado com largura máxima para o conteúdo principal, mantendo-o legível em telas grandes. */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Componente: Botão com Aparência de Link --- */
+.button-link { /* Estilo para o botão "Skate Terapia" */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--cor-texto);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover para o botão, mudando a cor de fundo para a cor de destaque. */
+.button-link:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: var(--cor-texto); /* Garante que o texto permaneça branco */
+}
+
+/* --- Estilos da Navegação Principal --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--cor-destaque); /* Destaque para links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover para os links da navegação. */
+nav a:hover {
+    color: var(--cor-texto); /* Efeito ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* --- Estilos do Conteúdo Principal --- */
+/* --- Conteúdo Principal --- */
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    color: var(--cor-destaque); /* Destaque para subtítulos */
+    font-family: 'Oswald', sans-serif; /* Estilo Stencil/Display mais fino */
+    font-weight: 300; /* Peso leve */
+    text-transform: uppercase; /* Caixa Alta */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+    padding-bottom: 10px;
+    font-style: italic; /* Adicionado estilo itálico */
+}
+
+/* Justifica o texto dos parágrafos para um alinhamento mais limpo. */
+p {
+    text-align: justify;
+}
+
+/* --- Seção Hero (Banner Principal) --- */
+/* --- Hero / Capa --- */
+.hero {
+    position: relative;
+    background-image: url("imagens/skate-capa.jpg");
+    background-size: cover;
+    background-position: center 20%; /* Ajustado para mostrar mais do topo da imagem (skatista) */
+    background-repeat: no-repeat;
+    min-height: 520px;
+    display: flex;
+    align-items: stretch; /* permite que .hero-content ocupe toda a altura */    
+}
+
+/* Cria uma sobreposição escura sobre a imagem de fundo do hero para melhorar a legibilidade do texto. */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 0;
+}
+
+/* Container para o conteúdo de texto dentro do hero, posicionado na parte inferior. */
+.hero-content {
+    position: absolute; /* fixa o bloco no fundo da hero */
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0; /* posiciona no rodapé */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 28px 48px; /* top, sides, bottom: h1 ficará próximo ao final */
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o H1 */
+}
+
+/* Estilo para o título principal (H1) no hero. */
+.hero h1 {
+    margin: 0;
+    color: var(--cor-texto);
+    font-family: 'Stardos Stencil', cursive;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4.5vw, 3.8rem); /* Tamanho da fonte reduzido novamente */
+    line-height: 1.2; /* Aumentado para acomodar a quebra de linha */
+    text-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+/* Garante que o título H1 tenha um contexto de posicionamento para z-index. */
+/* Garantia adicional para que o título fique sempre visível no rodapé */
+.hero h1 {
+    position: relative;
+}
+
+/* Estilos para a navegação interna do hero (não utilizada no layout final, mas presente no código). */
+.hero-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    justify-content: center; /* centraliza os links no topo */
+}
+
+/* Estilos para os links da navegação do hero. */
+.hero-nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    background: rgba(0,0,0,0.35);
+    padding: 6px 10px; /* menor padding */
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 0.95rem; /* reduzido conforme solicitado */
+}
+
+/* --- Componente: Caixa de Busca no Hero --- */
+/* Posiciona a caixa de busca no canto superior esquerdo do hero. */
+.hero-search {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    z-index: 2;
+    display: flex;
+}
+
+/* Estiliza o campo de input da busca. */
+.hero-search input[type="search"] {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--cor-texto);
+    padding: 8px 15px;
+    border-radius: 20px 0 0 20px; /* Bordas arredondadas apenas à esquerda */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    border-right: none; /* Remove a borda direita para unir ao botão */
+    width: 200px; /* Largura inicial */
+}
+
+/* Estiliza o texto do placeholder do campo de busca. */
+.hero-search input[type="search"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo do campo de busca quando está em foco. */
+.hero-search input[type="search"]:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.hero-search button {
+    /* Estiliza o botão de busca. */
+    background-color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-texto);
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0; /* Bordas arredondadas apenas à direita */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Efeito hover para o botão de busca. */
+.hero-search button:hover {
+    background-color: var(--cor-destaque-hover); /* Tom mais escuro de rosa no hover */
+}
+
+/* Ajusta a borda do botão quando o input ao lado está em foco, para manter a consistência visual. */
+.hero-search input[type="search"]:focus + button {
+    border-color: rgba(255, 255, 255, 0.3); /* Mantém a borda do botão consistente com o foco do input */
+}
+
+/* --- Componente: Botão "Home" no Hero --- */
+/* Posiciona o link "Home" no canto superior direito do hero. */
+.hero-home-link {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    z-index: 2;
+}
+
+/* Estiliza o link "Home" para parecer um botão. */
+.hero-home-link a { /* Estilo separado para o botão "Home" */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--cor-texto);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover para o botão "Home". */
+.hero-home-link a:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
+/* --- Media Query para Telas Pequenas (Responsividade) --- */
+/* Ajusta o layout para telas com largura máxima de 700px. */
+@media (max-width: 700px) {
+    .hero {
+        min-height: 420px; /* Ajusta a altura do hero */
+    }
+    .hero h1 {
+        font-size: clamp(1.6rem, 8vw, 2.4rem); /* Ajusta o tamanho da fonte do título */
+    }
+    .container {
+        padding: 16px; /* Ajusta o padding do container principal */
+    }
+    .hero-search {
+        left: 16px;
+        top: 16px;
+        width: calc(100% - 95px); /* Ajusta a largura para dar espaço ao menu */
+    }
+    
+    /* Esconde os botões originais em telas menores */
+    .hero-home-link {
+        right: 16px;
+        top: 16px;
+    }
+}
+
+/* --- Estilos da Timeline --- */
+/* Container principal da timeline, posicionado de forma relativa para servir de referência para seus filhos. */
+.timeline {
+    position: relative;
+    margin: 120px auto 48px; /* Aumentei a margem superior para empurrar a timeline para baixo */
+    width: 140px;
+    pointer-events: none;
+    z-index: 50; /* Garante que a timeline fique sobre outros elementos */
+}
+/* --- Estilos para o "Modo de Busca Ativo" --- */
+
+body.search-active .hero {
+    min-height: 80px; /* Reduz a altura para criar uma "barra" */
+    background-position: center 74%; /* Ajusta a imagem de fundo */
+    background-image: url("imagens/skate-capa02.jpg"); /* Nova imagem para o modo de busca */
+}
+
+/* Esconde o conteúdo do hero (título H1) quando a busca está ativa. */
+body.search-active .hero-content {
+    display: none;
+}
+
+/* Esconde a seção de introdução (se houver) quando a busca está ativa. */
+body.search-active .intro-section {
+    display: none;
+}
+
+/* Esconde o topo da timeline (círculo com texto) quando a busca está ativa. */
+body.search-active .timeline-top { /* Oculta o título "Evolução do Skate" da timeline */
+    display: none;
+}
+
+/* Sobe a timeline para perto do topo quando a busca está ativa. */
+body.search-active .timeline {
+    margin-top: 40px;
+}
+
+/* Esconde a linha e o marcador da timeline quando a busca está ativa, mostrando apenas o resultado. */
+body.search-active .timeline-line,
+body.search-active .timeline-marker {
+    display: none;
+}
+
+/* --- Componentes da Timeline --- */
+
+/* Estilo do topo da timeline (círculo amarelo com texto). */
+.timeline-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.timeline-top-outer{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(245, 205, 48, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-top-inner{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: var(--cor-timeline);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #000;
+    font-weight:700;
+    text-align:center;
+    font-style: italic;
+    font-size:14px;
+    pointer-events: auto;
+}
+
+/* A linha vertical central da timeline. */
+.timeline-line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    height: auto;
+    width: 4px;
+    background: rgba(255, 253, 253, 0.438); /* Cor da linha com 60% de opacidade */
+    border-radius: 2px;
+}
+
+/* O marcador circular que se move ao longo da linha da timeline. */
+.timeline-marker{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--cor-timeline);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#004d00;
+    font-size:20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);    
+    transition: none; /* O movimento será controlado 100% pelo JS */
+    pointer-events: none;
+    top: 120px; /* Posição inicial: Alinhado com o fim do círculo superior (que tem 120px de altura) */
+}
+
+/* --- Layout do Conteúdo da Timeline --- */
+/* Seção que envolve todos os itens da timeline. */
+.timeline-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+/* Estilo base para cada item (evento) da timeline. */
+.timeline-item{
+    display: block;
+    width: calc(60% - 100px);
+    max-width: 720px;
+    padding: 22px 28px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px) translateX(0);
+    transition: all 0.6s cubic-bezier(.2,.9,.3,1);
+}
+
+/* Alinha os itens da esquerda para a esquerda. */
+.timeline-item.left{
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Alinha os itens da direita para a direita. */
+.timeline-item.right{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+/* Ajuste para que os parágrafos ocupem melhor o espaço disponível */
+.timeline-item.right p {
+    text-align: right;
+}
+
+/* Ajuste para que o parágrafo siga o alinhamento do container à esquerda */
+.timeline-item.left p {
+    text-align: left;
+}
+
+/* Classe adicionada via JavaScript quando o item entra na tela, tornando-o visível com uma animação. */
+.timeline-item.in-view{
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1.02);
+    will-change: transform, opacity;
+}
+
+/* Estilo do título dentro de um item da timeline. */
+.timeline-item h2{ 
+    margin-top: 0;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* Estilo do parágrafo de introdução dentro de um item da timeline. */
+.timeline-item .intro{
+    font-size: 1.05rem;
+}
+
+/* --- Media Query para Telas Médias (Responsividade da Timeline) --- */
+@media (max-width: 900px){
+    /* Em telas menores, a timeline se torna um layout de bloco único, vertical. */
+    .timeline {
+        position: relative;
+        left: auto;
+        transform: none;
+        width: auto;
+        top: 0;
+        margin: 18px 0 0 0;
+        pointer-events: auto;
+    }
+    /* Esconde a linha e o marcador em telas menores (exceto no modo de busca) para simplificar o layout. */
+    body:not(.search-active) .timeline-line,
+    body:not(.search-active) .timeline-marker {
+        display: none;
+    }    
+    .timeline-item{ width: 100%; text-align: left; }
+}
+/* --- Estilos Específicos para a Página "Skate Terapia" --- */
+
+/* --- Hero da página Skate Terapia --- */
+.hero-skate-terapia {
+    background-image: url("imagens/capa-skate-terapia.jpg");
+    min-height: 470px; /* Altura um pouco menor que a principal */
+    background-position: center 95%; /* Sobe um pouco a imagem de fundo */
+}
+
+/* --- Estilos para a Página de Artigo (Skate Terapia) --- */
+/* Cabeçalho fixo para páginas de artigo. */
+
+.page-header {
+    background-color: var(--cor-cinza-escuro);
+    padding: 16px 0;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/* Container do conteúdo do cabeçalho da página. */
+.page-header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end; /* Alinha o link à direita */
+}
+
+/* Estilo do link "Home" no cabeçalho da página de artigo. */
+.page-header .home-link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    padding: 8px 15px;
+    border: 1px solid var(--cor-texto);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover para o link "Home". */
+.page-header .home-link:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
+.article-content {
+    padding: 40px 0; /* Espaçamento do conteúdo do artigo */
+}
+
+/* Estilo para o parágrafo introdutório do artigo. */
+.article-content .article-intro {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-style: italic;
+}
+
+/* Espaçamento entre parágrafos no artigo. */
+.article-content p {
+    margin-bottom: 1.5em; /* Espaçamento entre parágrafos */
+}
+
+/* Espaçamento acima dos subtítulos (H2) no artigo. */
+.article-content h2 {
+    margin-top: 3em; /* Adiciona um respiro (espaçamento) acima de cada subtítulo */
+}
+
+/* Estilo para links de parceria específicos dentro do artigo. */
+.article-content p a.link-parceria,
+.article-content p a.link-parceria:visited {
+    color: #f7c53aa6; /* Cor dourada específica solicitada */
+}
+
+/* Estilo para imagens dentro do conteúdo do artigo. */
+/* Estilo para imagens dentro do artigo */
+.article-image, .skate-therapy-img {
+    max-width: 500px; /* Define uma largura máxima para a imagem */
+    width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto;     /* Mantém a proporção da imagem */
+    display: block;   /* Remove espaços extras abaixo da imagem */
+    margin: 1em auto 3em; /* Espaçamento vertical e centralização horizontal */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+/* Estilo para o link de rede social no final do artigo. */
+/* Estilo para o link de rede social no final da página Skate Terapia */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    margin-top: 2em;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo específico para uma imagem na página Skate Terapia, para controle de tamanho. */
+/* Estilo específico para a imagem da página Skate Terapia para controle de tamanho */
+.skate-therapy-img {
+    max-width: 400px; /* Largura máxima reduzida para esta imagem específica */
+}
+
+/* --- Estilos do Rodapé --- */
+footer {
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 48px;
+    border-top: 1px solid var(--cor-cinza-escuro); /* Linha de separação */
+    color: rgba(255, 255, 255, 0.7); /* Branco com leve transparência para sutileza */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0; /* Remove margem padrão do parágrafo */
+    text-align: center; /* Garante a centralização do texto no rodapé */
+
+}
+
+/* --- Estilos Globais para Links de Conteúdo --- */
+/* Estilo para links dentro dos itens da timeline e resultados de busca. */
+.timeline-item p a,
+.timeline-item p a:visited,
+.search-result-view p a,
+.search-result-view p a:visited {
+    color: var(--cor-timeline-link); /* Cor dourada */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover para esses links. */
+.timeline-item p a:hover,
+.search-result-view p a:hover {
+    color: var(--cor-texto);
+    text-decoration: underline;
+}
+
+/* Ajuste para um botão-link que esteja dentro de um parágrafo na timeline. */
+/* Ajuste para o botão-link dentro de um parágrafo */
+.timeline-item p .button-link {
+    display: inline-block; /* Permite aplicar margens e padding sem quebrar a linha */
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
+}
+
+/* Estilos para links no conteúdo do artigo e no rodapé. */
+/* Estilos para links no conteúdo do artigo e rodapé */
+.article-content p a,
+.article-content p a:visited,
+footer a,
+footer a {
+    color: var(--cor-destaque); /* Cor rosa para destaque */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover para esses links. */
+.article-content p a:hover,
+footer a:hover {
+    color: var(--cor-texto);
+    text-decoration: underline;
+}
+
+/* --- Seção de Manobras --- */
+/* Estilo geral para a seção que apresenta as manobras. */
+.maneuvers-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+/* Card que contém o conteúdo da seção de manobras. */
+.maneuvers-card {
+    background-color: #111111; /* Fundo cinza muito escuro */
+    border-radius: 12px; /* Bordas arredondadas suaves */
+    padding: 40px; /* Padding generoso */
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centralização horizontal */
+    box-sizing: border-box;
+}
+
+/* Ajuste no título H2 dentro do card de manobras. */
+.maneuvers-card h2 {
+    border-bottom: none; /* Remove a linha do h2 padrão */
+    margin-bottom: 1rem;
+}
+
+/* Espaçamento para o parágrafo dentro do card. */
+.maneuvers-card p {
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+}
+
+/* Classe para destacar um texto específico dentro do card. */
+.maneuvers-card .highlight-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.maneuvers-card ul {
+    background-color: #2a2a2a; /* Fundo cinza escuro para a lista */
+    border-radius: 8px; /* Bordas arredondadas para o bloco da lista */
+    padding: 20px; /* Padding interno ajustado */
+    list-style: none; /* Remove o bullet padrão */
+    margin: 0 auto 2.5rem; /* Centraliza e adiciona margem inferior */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para cada item da lista de manobras (formato de pílula). */
+.maneuvers-card li {
+    background-color: #2a2a2a; /* Fundo cinza escuro */
+    border-radius: 50px; /* Bordas totalmente arredondadas (pílula) */
+    padding: 15px 20px; /* Espaçamento vertical confortável */
+    color: var(--cor-texto);
+    font-weight: bold; /* Texto em negrito */
+    position: relative; /* Necessário para o posicionamento dos pseudo-elementos */
+    display: flex;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center;
+    cursor: help; /* Mantém o cursor de ajuda */
+    overflow: hidden; /* Esconde o efeito de preenchimento fora dos limites */
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Cria uma bolinha branca customizada no início de cada item da lista. */
+.maneuvers-card li::before {
+    content: '';
+    position: absolute;
+    left: 25px; /* Posição fixa à esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2; /* Garante que a bolinha fique sobre o efeito de sweep */
+}
+
+/* Garante que o texto permaneça branco no hover para contraste. */
+.maneuvers-card li:hover {
+    color: var(--cor-texto); /* Mantém o texto branco para melhor contraste com o magenta */
+}
+
+/* Pseudo-elemento usado para criar o efeito de preenchimento no hover. */
+.maneuvers-card li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--cor-destaque); /* Usa a cor magenta da paleta */
+    transition: width 0.4s ease-in-out;
+    z-index: -1; /* Coloca o efeito atrás do texto e da bolinha */
+}
+
+/* No hover, a largura do pseudo-elemento 'after' expande para 100%, criando a animação. */
+.maneuvers-card li:hover::after {
+    width: 100%; /* Expande o fundo no hover */
+}
+
+/* --- Componente: Botão "Voltar ao Topo" --- */
+.scroll-to-top-btn {
+    background-color: #ffcc00; /* Fundo amarelo mostarda */
+    border: none;
+    width: 50px; /* Largura e altura iguais para um círculo */
+    height: 50px;
+    border-radius: 50%; /* Círculo perfeito */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza o botão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo do ícone SVG dentro do botão. */
+.scroll-to-top-btn svg {
+    stroke: #000000; /* Ícone da seta preto */
+}
+
+/* Efeito de hover para o botão "Voltar ao Topo". */
+.scroll-to-top-btn:hover {
+    transform: scale(1.1); /* Aumenta levemente no hover */
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6); /* Adiciona um brilho */
+}
+
+/* --- Estilos para a Página de Detalhes da Manobra --- */
+/* Container principal para os detalhes de uma manobra específica. */
+.maneuver-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Container para o vídeo do YouTube, mantendo a proporção 16:9. */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 20px auto 0;
+}
+
+/* Faz o iframe do vídeo preencher totalmente o container. */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do título na página de detalhes da manobra. */
+.maneuver-details h1 {
+    color: var(--cor-destaque);
+}
+
+/* Estilo do link "Voltar" na página de detalhes da manobra. */
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    background-color: var(--cor-timeline);
+    color: #111;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito hover para o link "Voltar". */
+.back-link:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 85, 0.4);
+}
+
+/* --- Estilos para a Visualização do Resultado da Busca --- */
+/* Container que aparece para mostrar o resultado de uma busca. */
+.search-result-view {
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #111;
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Título do resultado da busca. */
+.search-result-view h1 {
+    color: var(--cor-destaque);
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Parágrafo do resultado da busca. */
+.search-result-view p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- Classes Utilitárias --- */
+/* Classe genérica para ocultar elementos de forma forçada. */
+.hidden {
+    display: none !important;
+}
+
+/* --- Animações (Keyframes) --- */
+/* Animação simples de fade-in para fazer elementos aparecerem suavemente. */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evolução do Skate</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-search">
+            <input type="search" id="search-input" placeholder="Busque no site...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div class="hero-home-link">
+            <a href="#" id="home-button" class="button-link">Home</a>
+        </div>
+
+        <div class="hero-content">
+            <h1>História do skate:<br>Acontecimentos de sua evolução</h1>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Container para o resultado da busca (inicialmente oculto) -->
+        <div id="search-result-container" class="hidden"></div>
+
+        <!-- Conteúdo principal que será ocultado durante a busca -->
+        <div id="main-content">
+            <main>
+                <!-- Parágrafo introdutório  -->
+                <section class="intro-section">
+                    <p class="intro">O skate nasceu como uma alternativa criativa para surfistas que queriam “surfar no concreto” nos dias sem ondas. Hoje, é muito mais do que isso: é esporte olímpico, expressão cultural, arte, moda, movimento social e estilo de vida. Mas como essa transformação aconteceu? Vamos viajar no tempo e entender a evolução do skate, desde suas origens improvisadas até o reconhecimento mundial.</p>
+                </section>
+    
+                <!-- Timeline e marcadores -->
+                <div class="timeline">
+                    <div class="timeline-top">
+                        <div class="timeline-top-outer">
+                            <div class="timeline-top-inner">Evolução do Skate</div>
+                        </div>
+                    </div>
+                    <div class="timeline-line" id="timeline-line"></div>
+                    <div class="timeline-marker" id="timeline-marker">🛹</div>
+                </div>
+    
+                <!-- O conteúdo da timeline será inserido aqui pelo script.js -->
+                <section class="timeline-section" id="timeline-container"></section>
+    
+                <!-- Seção de Manobras -->
+                <section class="maneuvers-section" id="maneuvers">
+                    <div class="maneuvers-card">
+                        <h2>Próximo Passo: As Manobras</h2>
+                        <p>Você viajou pela história do skate. Que tal agora explorar os movimentos que o definem? pesquise por uma das manobras abaixo na <span class="highlight-text">caixa de busca</span> para ver como ela é feita!</p>
+                        <ul>
+                            <li>Kickflip</li>
+                            <li>Heelflip</li>
+                            <li>Ollie</li>
+                            <li>Impossible</li>
+                        </ul>
+                        <button class="scroll-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="Voltar ao topo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19V5"></path>
+                                <path d="m5 12 7-7 7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+    
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Todos os direitos reservados a Viny Sousa | <a href="https://github.com/ViinySousa" target="_blank" rel="noopener noreferrer">Github</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+</html>

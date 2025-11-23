@@ -1,0 +1,33 @@
+[
+     {
+        "id": "ollie",
+        "nome": "Ollie",
+        "descricao": "A manobra mais importante do skate, inventada por Alan 'Ollie' Gelfand. O Ollie é o ato de pular com o skate sem usar as mãos. O skatista bate o tail (a cauda) do skate no chão e, ao mesmo tempo, desliza o pé da frente para nivelar o skate no ar, permitindo superar obstáculos.",
+        "videoUrl": "https://www.youtube.com/watch?v=iC9WNYgcB7I&list=PLYoZJiwFBPFnhRD7KMJo-2gYnVTrjwef2&index=109",
+        "criador": "Alan Gelfand"
+    },
+
+    {
+        "id": "kickflip",
+        "nome": "Kickflip",
+        "descricao": "O Kickflip é uma das manobras mais fundamentais do street skate, criada por Rodney Mullen. Consiste em fazer o skate girar 360 graus ao longo do seu eixo longitudinal. O skatista chuta a borda do shape com o pé da frente, fazendo-o virar no ar antes de aterrissar com os dois pés sobre o skate.",
+        "videoUrl": "https://www.youtube.com/watch?v=yMs5sSWIa9c",
+        "criador": "Rodney Mullen"
+    },
+    
+    {
+        "id": "heelflip",
+        "nome": "Heelflip",
+        "descricao": "Similar ao Kickflip, o Heelflip porém, faz o skate girar de uma forma um pouco diferente, mas na direção oposta. Em vez de chutar com a ponta do pé, o skatista usa o calcanhar para 'chutar' a borda do shape, fazendo-o girar para trás. É uma manobra estilosa e essencial no repertório de qualquer skatista.",
+        "videoUrl": "https://www.youtube.com/watch?v=qLLYOQyLJpQ",
+        "criador": "Rodney Mullen"
+    },
+   
+    {
+        "id": "impossible",
+        "nome": "Impossible",
+        "descricao": "A manobra 'Impossible' é uma das mais impressionantes visualmente. Nela, o skate parece 'enrolar' verticalmente ao redor do pé de trás do skatista, que guia a rotação com um movimento de 'concha' antes de aterrissar de volta na prancha.",
+        "videoUrl": "https://www.youtube.com/watch?v=wrEuaP3Ly6w",
+        "criador": "Rodney Mullen"
+    }
+]

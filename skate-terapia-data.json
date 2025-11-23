@@ -1,0 +1,43 @@
+[
+    {
+        "titulo": "Onde tudo começou",
+        "paragrafo": "A ideia nasceu de uma observação sensível: {lupércio_conde}, criador do projeto, viu um jovem com síndrome de Down praticando skate e percebeu o quanto aquele esporte poderia ser terapêutico, divertido e libertador. O que poderia ser apenas uma experiência isolada, transformou-se em um projeto consistente, acolhedor e inovador.<br><br>Em março de 2017, o Skate Terapia ganhou sua casa: a Briosa Skate Place, pista localizada dentro do Clube da Portuguesa Santista, em Santos. Um ambiente seguro, adaptado e preparado para oferecer muito mais que aulas de skate, um espaço para convivência, apoio e desenvolvimento.",
+        "links": {
+            "lupércio_conde": "<a href=\"https://www.instagram.com/lupaconde/\" target=\"_blank\" rel=\"noopener noreferrer\"><i>Lupércio Conde Júnior</i></a>"
+        }
+    },
+    {
+        "titulo": "Um projeto que une esporte, terapia e inclusão",
+        "paragrafo": "O Skate Terapia tem como missão estimular habilidades físicas, cognitivas e emocionais por meio da prática do skate, sempre respeitando os limites e potencialidades de cada participante.<br><br>Entre os principais benefícios trabalhados estão:<br><br>✔ Equilíbrio<br>✔ Concentração<br>✔ Agilidade<br>✔ Coordenação motora<br>✔ Propriocepção (consciência corporal)<br>✔ Autoconfiança e autonomia<br><br>As aulas são individuais, sempre acompanhadas por um ou dois instrutores, garantindo atenção personalizada e segurança. O programa inicial conta com mínimo de 8 sessões (duas por semana), permitindo evolução gradual e conquistas visíveis.",
+        "imagem": {
+            "src": "imagens/foto-skate-terapia.jpg",
+            "alt": "Instrutor auxiliando aluno durante a aula de skate."
+        }
+    },
+    {
+        "titulo": "Quem faz o projeto acontecer",
+        "paragrafo": "O Skate Terapia é conduzido por skatistas experientes da região da Baixada Santista, que aliaram técnica, paixão e sensibilidade:<br><br>• Douglas Rogério Tomaz<br><br>• Fábio Angel<br><br>• Armando “Rolamento” Perez<br><br>Além da equipe técnica, o projeto conta com coordenação social da assistente social Mônica Kellermann, garantindo abordagem humana, acolhedora e inclusiva."
+    },
+    {
+        "titulo": "O poder da inclusão em movimento",
+        "paragrafo": "No Skate Terapia, o skate é mais que uma prática esportiva, é ferramenta de superação, convivência e empatia. Na pista, cada conquista é celebrada. Cada avanço é compartilhado. Os participantes aprendem a se ajudar, se incentivar e se respeitar, criando vínculos e fortalecendo a autoestima.<br><br>O projeto já acolhe entidades da região e agora busca novos padrinhos e madrinhas para ampliar o acesso a crianças e adolescentes de baixa renda que poderiam se beneficiar dessa iniciativa transformadora.<br><br>A proposta é clara: fazer do skate um meio para inclusão verdadeira, aquela que alcança o corpo, o coração e a dignidade de cada pessoa."
+    },
+    {
+        "titulo": "Rede de apoio e parcerias",
+        "paragrafo": "O Skate Terapia conta com o apoio de instituições que acreditam na força do esporte como ferramenta de transformação social. Entre elas:<br><br>🤝 {rotary_clubes}<br>🏁 Briosa Skate Place, que cedeu o espaço e é parceira na missão<br><br>Graças a essa rede de apoio, o projeto cresce, se fortalece e continua impactando vidas.",
+        "links": {
+            "rotary_clubes": "<a href=\"https://www.rotarydesantos.org.br/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-parceria\"><i>Rotary Clubes de Santos</i></a>"
+        }
+    },
+    {
+        "titulo": "Mais que skate. Mais que terapia. Uma nova forma de inclusão.",
+        "paragrafo": "O Skate Terapia prova que inclusão não se faz apenas com acessibilidade, mas com afeto, respeito e oportunidade. Cada participante, ao subir no skate, descobre mais do que equilíbrio: encontra novas possibilidades, desenvolve autonomia e constrói sua própria história de superação.<br><br>🛹 Porque às vezes, tudo que alguém precisa é de uma prancha, quatro rodinhas e alguém que acredite no seu potencial.",
+        "imagem": {
+            "src": "imagens/foto-alunos-pais-instrutores.jpg",
+            "alt": "Alunos, pais e instrutores do projeto Skate Terapia reunidos em uma foto de grupo."
+        }
+    },
+    {
+        "paragrafo": "<div class=\"social-link\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"></path><line x1=\"17.5\" y1=\"6.5\" x2=\"17.51\" y2=\"6.5\"></line></svg> Acompanhe o projeto no <a href=\"https://www.instagram.com/skateterapia/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a></div>"
+    }
+]

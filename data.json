@@ -1,0 +1,73 @@
+[
+    {
+        "ano": 1950,
+        "titulo": "O Começo: O “Surf de Calçada”",
+        "descricao": "Na ensolarada Califórnia, surfistas buscavam reproduzir a sensação do surf em terra firme. Usaram tábuas improvisadas com rodinhas de patins, nascia o sidewalk surfing (surf de calçada). Sem formato definido, sem manobras, sem indústria. Apenas liberdade, criatividade e paixão.",
+        "posicao": "right"
+    },
+    {
+        "ano": 1960,
+        "titulo": "O Skate Ganha Forma",
+        "descricao": "Nesta década, surgem as primeiras fábricas de skate, e os shapes começam a ganhar formatos mais funcionais. O skate passa a ser vendido em lojas, e surgem as primeiras competições; ainda simples, mas já com espírito esportivo. Mas havia um problema: as rodas de metal e argila eram instáveis e perigosas, o que limitou seu crescimento.",
+        "posicao": "left"
+    },
+    {
+        "ano": 1970,
+        "titulo": "Revolução, Invenções e o Nascimento do Skate Moderno",
+        "descricao": "A verdadeira revolução do skate começou nos anos 70: {frank_nasworthy} inventa as rodas de poliuretano, mais aderentes, estáveis e seguras. {alan_gelfand} cria o Ollie, a manobra que permitiu saltar sem usar as mãos, base de todas as manobras modernas. Piscinas vazias viram pistas improvisadas, surgindo o skate vertical (bowl e rampas). É nesta década que surgem lendas como Tony Alva, Stacy Peralta e Jay Adams, os famosos {z_boys}. O skate deixa de ser brincadeira e passa a ser cultura: atitude, estilo e identidade.",
+        "links": {
+            "frank_nasworthy": "<a href='https://skateboardinghalloffame.org/shof-2012/frank-nasworthy-2012/' target='_blank'>Frank Nasworthy</a>",
+            "alan_gelfand": "<a href='https://skateboardinghalloffame.org/shof-2013/alan-gelfand-2013/' target='_blank'>Alan Gelfand</a>",
+            "z_boys": "<a href='https://www.surfertoday.com/skateboarding/z-boys-the-story-of-the-legendary-zephyr-skateboarding-team' target='_blank'>Z-Boys</a>"
+        },
+        "posicao": "right"
+    },
+    {
+        "ano": 1980,
+        "titulo": "O Skate Abraça as Ruas",
+        "descricao": "Com o surgimento de pistas e half pipes, o skate cresceu como esporte radical. Mas o grande salto foi nas ruas: calçadas, escadas, corrimãos e praças se transformaram em palcos de criatividade. Nasce o street skate. {rodney_mullen} revoluciona tudo, criando mais de 30 manobras (kickflip, heelflip, impossible, etc.), mudando definitivamente a história do skate. O skate se mistura com música, arte, moda, comportamento, e se torna símbolo de atitude urbana.",
+        "links": {
+            "rodney_mullen": "<a href='https://www.surfertoday.com/skateboarding/rodney-mullen-the-life-and-career-of-a-skateboarding-icon' target='_blank'>Rodney Mullen</a>"
+        },
+        "posicao": "left"
+    },
+    {
+        "ano": 1990,
+        "titulo": "Profissionalização, Indústria e Mídia",
+        "descricao": "A explosão do skate veio com as mídias e competições globais: X-Games levam o skate à televisão. Vídeos de skate popularizaram manobras e skatistas pelo mundo. Marcas como Vans, Santa Cruz, Powell Peralta, DC Shoes e Element transformam o skate em mercado, estilo de vida e profissão. O skate deixa o underground e começa a ganhar reconhecimento comercial e cultural.",
+        "posicao": "right"
+    },
+    {
+        "ano": 2000,
+        "titulo": "Tecnologia, Conteúdo e o Fortalecimento do Skate Feminino",
+        "descricao": "Com a internet e a popularização dos vídeos digitais, o skate se espalhou pelo mundo como nunca antes. Os vídeos de manobras, vlogs e produções independentes revelaram talentos de todos os continentes, rompendo barreiras culturais e geográficas. Skatistas brasileiros como {bob_burnquist}, {sandro_dias} (Mineirinho) e {rodrigo_tx} consolidavam o Brasil como potência mundial, mostrando que o país não apenas consumia cultura do skate, mas ele também produzia, inovava e influenciava. Foi também nessa época que o skate feminino começou a ganhar visibilidade e respeito, com nomes que abriram caminho e inspiraram novas gerações. Entre elas, destaca-se {karen_jonz}.",
+        "links": {
+            "bob_burnquist": "<a href='https://www.instagram.com/bobburnquist/?hl=pt-br' target='_blank'>Bob Burnquist</a>",
+            "sandro_dias": "<a href='https://www.instagram.com/diassandro/?hl=pt' target='_blank'>Sandro Dias</a>",
+            "rodrigo_tx": "<a href='https://www.instagram.com/rodrigotx/' target='_blank'>Rodrigo TX</a>",
+            "karen_jonz": "<a href='https://www.instagram.com/karenjonz/?hl=pt' target='_blank'>Karen Jonz</a>"
+        },
+        "posicao": "left"
+    },
+    {
+        "ano": 2010,
+        "titulo": "Skate nas Olimpíadas e Reconhecimento Global",
+        "descricao": "O skate atinge seu ápice com sua estreia oficial nas Olimpíadas de Tóquio 2021, com as modalidades Street e Park. O Brasil brilhou com nomes como {rayssa_leal}, {kelvin_hoefler}, {pedro_barros} e {leticia_bufoni}, colocando o país entre as maiores potências do skate mundial. O skate passou a ser oficialmente reconhecido como esporte, profissão e cultura global, sem perder suas raízes de liberdade e expressão.",
+        "links": {
+            "rayssa_leal": "<a href='https://www.olympics.com/pt/atletas/rayssa-leal' target='_blank'>Rayssa Leal</a>",
+            "kelvin_hoefler": "<a href='https.cob.org.br/time-brasil/medalhistas-olimpicos/kelvin-hoefler' target='_blank'>Kelvin Hoefler</a>",
+            "pedro_barros": "<a href='https://www.cob.org.br/time-brasil/medalhistas-olimpicos/pedro-de-silva-barros' target='_blank'>Pedro Barros</a>",
+            "leticia_bufoni": "<a href='https://www.olympics.com/pt/atletas/leticia-bufoni' target='_blank'>Letícia Bufoni</a>"
+        },
+        "posicao": "right"
+    },
+    {
+        "ano": 2025,
+        "titulo": "O skate hoje",
+        "descricao": "A evolução do skate reflete sua capacidade de adaptação: nasceu como alternativa ao surf, virou símbolo cultural e hoje é esporte olímpico. Mais do que manobras, o skate representa liberdade, criatividade e comunidade. Sua história continua sendo escrita a cada nova geração que sobe em uma prancha.<br><br>Hoje, o skate acolhe crianças, adultos, mulheres, pessoas com deficiência e idosos. É lazer, terapia, profissão, saúde, cultura e estilo de vida.<br><br>Conheça o projeto: {skate_terapia}.",
+        "posicao": "left",
+        "links": {
+            "skate_terapia": "<a href='skate-terapia.html'>Skate terapia</a>"
+        }
+    }
+]
